@@ -5,7 +5,7 @@ from selenium import webdriver
 
 DIR = os.getcwd()
 os.chdir(DIR)
-wb = openpyxl.load_workbook('2. Final Project - Team 7 - Financial Analytics.xlsm',read_only =False, keep_vba=True)
+wb = openpyxl.load_workbook('',read_only =False, keep_vba=True)
 ws = wb["Raw Data"]
 
 ##METRO
@@ -189,4 +189,4 @@ from datetime import datetime
 ws ['B25'] = "Last updated:"
 ws ['C25'] = datetime.now()
 
-wb.save('2. Final Project - Team 7 - Financial Analytics - Updated.xlsm')
+wb.save('')
